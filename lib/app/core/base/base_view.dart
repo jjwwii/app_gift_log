@@ -19,7 +19,7 @@ abstract class BaseView<T extends BaseViewModel> extends GetView<T> {
 
   Widget body(BuildContext context);
 
-  BottomNavigationBar? bottomNavigationBar(BuildContext context) => null;
+  Widget? bottomNavigationBar(BuildContext context) => null;
 
   Color get backgroundColor => Colors.white;
 }

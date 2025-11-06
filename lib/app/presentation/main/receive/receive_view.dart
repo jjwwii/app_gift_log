@@ -2,10 +2,15 @@ import 'package:app_gift_log/app/core/base/base_view.dart';
 import 'package:app_gift_log/app/presentation/main/receive/receive_view_model.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/constants/app_colors.dart';
+
 class ReceiveView extends BaseView<ReceiveViewModel> {
   const ReceiveView({super.key});
 
   static const routeName = "/receive";
+
+  @override
+  Color get backgroundColor => AppColors.background2;
 
   @override
   PreferredSizeWidget? appBar(BuildContext context) => null;

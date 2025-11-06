@@ -15,6 +15,11 @@ class MyApp extends StatelessWidget {
       initialRoute: AppPages.initialRoute,
       getPages: AppPages.pages,
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent
+      ),
     );
   }
 }
